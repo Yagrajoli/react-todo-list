@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color:#3399FF;
+}
+
+.container{
+  width: 100%;
+  max-width: 700px;
+  background-color: #900C3F;
+  margin: 0 auto;
+}
+
+.todo-box{
+  padding:20px 40px;
+  width:100%;
+  margin-top: 9rem ;
+  margin-bottom: 20px;
+}
+
+.todo-box h1{
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.input-field{
+  margin-bottom: 20px;
+  
+}
+
+input{
+  /* font-size: 13px; */
+
+}
+
+.input-field input{
+  padding: 10px 20px;
+  width: 500px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  /* border-radius: 5px; */
+}
+
+.add-btn{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.each-item{
+  width: 80%;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  color: #fff;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.each-item:hover{
+  background-color: #222;
+  color: #fff;
+}
+
+.each-item h2{
+  font-size: 16px;
+}
+
+
+.item-wrapper{
+  display: flex;
+  margin-bottom: 15px;
+  
+}
+.rm-btn{
+  margin-left: 12px;
+  transition: all 0.3s;
+}
+
+.rm-btn:hover{
+  background-color: #222;
+  color: #fff;
+}
+
+.remove-all{
+  text-align: center;
+}
+
+.remove-all-btn{
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+
+}
+
+.remove-all-btn:hover{
+  color: #fff;
+  background-color: #222;
+}
+
+
+
+
