@@ -5,17 +5,25 @@ export default function App() {
 
   const [inputData, setInputData] = useState("");
   const [Item,setItem] = useState([]);
+  const [btn,setBtn] = useState(false);
 
 
   const addItem = () =>{
     if(!inputData){
-
+        
     }
 
     else{
       setItem([...Item,inputData]);
       setInputData("");
+
+        setBtn(true)
+      
     }
+
+   
+
+    
     
   }
 
@@ -23,15 +31,28 @@ export default function App() {
     // console.log(id);
       const updatedItem = Item.filter((curr,ind)=>{
         return ind != id;
+        
       })
+      
 
       setItem(updatedItem);
 
+      
+      
+        
+      
+      
+      
 
   }
 
   const removeAll = () =>{
     setItem([]);
+
+    // console.log(Item);
+    setBtn(false)
+    
+    
   }
 
   
@@ -67,7 +88,9 @@ export default function App() {
              }
 
             <div className="remove-all">
-              <button onClick={removeAll} className='remove-all-btn'>Remove All</button>
+             {
+              btn ? <button onClick={removeAll} className='remove-all-btn'>Remove All</button> : null
+             }
             </div>
               
             </div>
